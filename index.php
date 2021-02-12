@@ -1,7 +1,9 @@
-<!DOCTYPE html>
-<html>
+<?php get_header();?>
+
+
+<?php $blog = get_field('blog'); ?>
 	<head>
-		<title>Test</title>
+		<title>Yes</title>
 		<!-- Bootstrap -->
     	<link rel="stylesheet" href="css/bootstrap.css">
     	<!-- JQUERY -->
@@ -247,12 +249,12 @@
 	<body>
 		<div class="sidenav col-sm-2">
 			<ul>
-				<a class="nav-link" href="#main-summary">Summary<span class="sr-only"></span></a>
-				<a class="nav-link" href="#main-experience">Experience<span class="sr-only"></span></a>
+				<a class="nav-link" href="#main-summary">summary<span class="sr-only"></span></a>
+				<a class="nav-link" href="#main-experience">experience<span class="sr-only"></span></a>
 				<!--<a class="nav-link" href="#">Projects<span class="sr-only">(current)</span></a>-->
-				<a class="nav-link" href="#main-certification">Certifications, Seminars, Workshops<span class="sr-only"></span></a>
-				<a class="nav-link" href="#">Others<span class="sr-only"></span></a>
-				<a class="nav-link" href="#">Blog</a>
+				<a class="nav-link" href="#main-certification">certifications, seminars, workshops<span class="sr-only"></span></a>
+				<a class="nav-link" href="#">others<span class="sr-only"></span></a>
+				<a class="nav-link" href="http://akiram.test/blog/">blog</a>
 			</ul>
 		</div>
 		
@@ -387,5 +389,4 @@
 			</div>
 		</div>
 	</body>
-	
-</html>
+	<?php wp_footer(); ?>
